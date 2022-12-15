@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fundo</title>
+    <title>Fundo fixo da tela</title>
     <style>
         html, body {
             margin: 0;
@@ -14,9 +14,9 @@
         body {
             background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
-            background-repeat: repeat-y; 
-            background-attachment: scroll;
-            background-position: right bottom;
+            background-repeat: no-repeat; 
+            background-attachment: fixed;
+            background-position: center top;
             background-size: cover;
             
             /* background: black url('imagens/wallpaper002.jpg') no-repeat fixed center center; */
@@ -24,9 +24,12 @@
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             margin: auto;
             padding: 10px;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+            text-align: justify;
         }
     </style>
 </head>
